@@ -1,0 +1,26 @@
+;R1: temporary data storage
+;R16: ramsize, size of data block to copy
+;R17: ramsize high byte, size of the data block to copy
+;R28: YL, destination address low byte
+;R29: YH, destination address high byte
+;R30: ZL, source address low byte
+;R31: ZH, source address high byte
+
+copy_init:
+   ldi XL, $0B
+   ldi XH, $02
+   ldi YL, $00
+   ldi YH, $08
+   ldi ZL, $00
+   ldi ZH, $01
+
+copy:
+   ld R1, Z+
+   st Y+, R1
+   dec R16
+   brne copy
+
+complete:
+   nop   
+
+   

@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+Mon Jul 07 17:59:01 EDT 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-0147-12d6-52cc-ffffc34c4c3b 
+on database directory /home/yang/Dropbox/Research/BitGuard/projects/.metadata/.plugins/de.walware.statet.r.core/db in READ ONLY mode with class loader org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader@5c7eef55[de.walware.thirdparty-org.apache.derby.core:10.8.2000002.b201306021645E42sw(id=398)] 
+Loaded from file:/home/yang/Desktop/eclipse/plugins/de.walware.thirdparty-org.apache.derby.core_10.8.2000002.b201306021645E42sw.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_17-b02
+user.dir=/home/yang/Desktop/eclipse
+derby.system.home=/home/yang/Dropbox/Research/BitGuard/projects/.metadata/.plugins/de.walware.ecommons.edb
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Jul 07 18:00:40 EDT 2014: Shutting down Derby engine
+----------------------------------------------------------------
+Mon Jul 07 18:00:40 EDT 2014:
+Shutting down instance a816c00e-0147-12d6-52cc-ffffc34c4c3b on database directory /home/yang/Dropbox/Research/BitGuard/projects/.metadata/.plugins/de.walware.statet.r.core/db with class loader org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader@5c7eef55[de.walware.thirdparty-org.apache.derby.core:10.8.2000002.b201306021645E42sw(id=398)] 
+----------------------------------------------------------------

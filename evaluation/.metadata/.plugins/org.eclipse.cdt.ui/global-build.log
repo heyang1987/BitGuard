@@ -1,0 +1,124 @@
+14:59:52 **** Rebuild of configuration Debug for project randomProgmem ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o randomProgmem.o "..\\randomProgmem.c" 
+..\randomProgmem.c: In function 'main':
+..\randomProgmem.c:25:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o randomProgmem.exe randomProgmem.o 
+15:00:23 **** Incremental Build of configuration Debug for project randomProgmem ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o randomProgmem.o "..\\randomProgmem.c" 
+..\randomProgmem.c:6:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main() {
+      ^
+gcc -o randomProgmem.exe randomProgmem.o 
+15:00:40 **** Incremental Build of configuration Debug for project randomProgmem ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o randomProgmem.o "..\\randomProgmem.c" 
+gcc -o randomProgmem.exe randomProgmem.o 
+Info: Nothing to build for randomProgmem
+15:01:38 **** Incremental Build of configuration Debug for project randomProgmem ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o randomProgmem.o "..\\randomProgmem.c" 
+gcc -o randomProgmem.exe randomProgmem.o 
+Info: Nothing to build for randomProgmem
+Info: Nothing to build for randomProgmem
+Info: Nothing to build for randomProgmem
+Info: Nothing to build for randomProgmem
+Info: Nothing to build for randomProgmem
+Info: Nothing to build for randomProgmem
+Info: Nothing to build for randomProgmem
+Info: Nothing to build for randomProgmem
+15:03:08 **** Incremental Build of configuration Debug for project randomProgmem ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o randomProgmem.o "..\\randomProgmem.c" 
+..\randomProgmem.c: In function 'main':
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\D' [enabled by default]
+  if( (fp = fopen("D:\Dropbox\Research\BitGuard\evaluation\test_timer\test_timer\progmem1.h","w+"))!=NULL){
+                  ^
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\R' [enabled by default]
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\B' [enabled by default]
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\p' [enabled by default]
+gcc -o randomProgmem.exe randomProgmem.o 
+Info: Nothing to build for randomProgmem
+15:03:56 **** Incremental Build of configuration Debug for project randomProgmem ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o randomProgmem.o "..\\randomProgmem.c" 
+..\randomProgmem.c: In function 'main':
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\D' [enabled by default]
+  if( (fp = fopen("D:/\Dropbox/\Research/\BitGuard/\evaluation/\test_timer/\test_timer/\progmem1.h","w+"))!=NULL){
+                  ^
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\R' [enabled by default]
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\B' [enabled by default]
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\p' [enabled by default]
+gcc -o randomProgmem.exe randomProgmem.o 
+15:04:17 **** Incremental Build of configuration Debug for project randomProgmem ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o randomProgmem.o "..\\randomProgmem.c" 
+..\randomProgmem.c: In function 'main':
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\p' [enabled by default]
+  if( (fp = fopen("D:\progmem1.h","w+"))!=NULL){
+                  ^
+gcc -o randomProgmem.exe randomProgmem.o 
+Info: Nothing to build for randomProgmem
+Info: Nothing to build for randomProgmem
+Info: Nothing to build for randomProgmem
+15:09:18 **** Incremental Build of configuration Debug for project randomProgmem ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o randomProgmem.o "..\\randomProgmem.c" 
+..\randomProgmem.c: In function 'main':
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\p' [enabled by default]
+  if( (fp = fopen("..\test_timer\test_timer\progmem1.h","w+"))!=NULL){
+                  ^
+gcc -o randomProgmem.exe randomProgmem.o 
+Info: Nothing to build for randomProgmem
+Info: Nothing to build for randomProgmem
+Info: Nothing to build for randomProgmem
+Info: Nothing to build for randomProgmem
+15:10:18 **** Incremental Build of configuration Debug for project randomProgmem ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o randomProgmem.o "..\\randomProgmem.c" 
+gcc -o randomProgmem.exe randomProgmem.o 
+Info: Nothing to build for randomProgmem
+15:11:56 **** Incremental Build of configuration Debug for project randomProgmem ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o randomProgmem.o "..\\randomProgmem.c" 
+..\randomProgmem.c: In function 'main':
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\D' [enabled by default]
+  if( (fp = fopen("D:\Dropbox\Research\BitGuard\evaluation\test_timer\test_timer\progmem1.h","w+"))!=NULL){
+                  ^
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\R' [enabled by default]
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\B' [enabled by default]
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\p' [enabled by default]
+gcc -o randomProgmem.exe randomProgmem.o 
+15:12:02 **** Incremental Build of configuration Debug for project randomProgmem ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o randomProgmem.o "..\\randomProgmem.c" 
+..\randomProgmem.c: In function 'main':
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\D' [enabled by default]
+  if( (fp = fopen("D:\Dropbox\Research\BitGuard\evaluation\test_timer\test_timer\\progmem1.h","w+"))!=NULL){
+                  ^
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\R' [enabled by default]
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\B' [enabled by default]
+gcc -o randomProgmem.exe randomProgmem.o 
+15:12:11 **** Incremental Build of configuration Debug for project randomProgmem ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o randomProgmem.o "..\\randomProgmem.c" 
+..\randomProgmem.c: In function 'main':
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\D' [enabled by default]
+  if( (fp = fopen("D:\Dropbox\Research\BitGuard\evaluation\test_timer\test_timer\rogmem1.h","w+"))!=NULL){
+                  ^
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\R' [enabled by default]
+..\randomProgmem.c:11:18: warning: unknown escape sequence: '\B' [enabled by default]
+gcc -o randomProgmem.exe randomProgmem.o 
+15:13:31 **** Incremental Build of configuration Debug for project randomProgmem ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o randomProgmem.o "..\\randomProgmem.c" 
+gcc -o randomProgmem.exe randomProgmem.o 
+Info: Nothing to build for randomProgmem
+Info: Nothing to build for randomProgmem
+Info: Nothing to build for randomProgmem
+Info: Nothing to build for randomProgmem
+Info: Nothing to build for randomProgmem
+Info: Nothing to build for randomProgmem

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml initial="Idle" version="1.0" xmlns="http://www.w3.org/2005/07/scxml">
+    <state id="InService">
+        <onentry>
+            <raise event="callMethod(ATMStateMachine.entryInService)"/>
+        </onentry>
+        <transition cond="Always" event="Shutdown" target="OutOfService">
+            <raise event="callMethod(ATMStateMachine.transitFromInServiceToOutOfServiceOnShutdown)"/>
+        </transition>
+        <transition cond="Always" event="ConnectionLost" target="Disconnected">
+            <raise event="callMethod(ATMStateMachine.transitFromInServiceToDisconnectedOnConnectionLost)"/>
+        </transition>
+        <onexit>
+            <raise event="callMethod(ATMStateMachine.exitInService)"/>
+        </onexit>
+    </state>
+    <state id="Disconnected">
+        <onentry>
+            <raise event="callMethod(ATMStateMachine.entryDisconnected)"/>
+        </onentry>
+        <transition cond="Always" event="ConnectionRestored" target="InService">
+            <raise event="callMethod(ATMStateMachine.transitFromDisconnectedToInServiceOnConnectionRestored)"/>
+        </transition>
+        <onexit>
+            <raise event="callMethod(ATMStateMachine.exitDisconnected)"/>
+        </onexit>
+    </state>
+    <state id="OutOfService">
+        <onentry>
+            <raise event="callMethod(ATMStateMachine.entryOutOfService)"/>
+        </onentry>
+        <transition cond="Always" event="ConnectionLost" target="Disconnected">
+            <raise event="callMethod(ATMStateMachine.transitFromOutOfServiceToDisconnectedOnConnectionLost)"/>
+        </transition>
+        <transition cond="Always" event="Startup" target="InService">
+            <raise event="callMethod(ATMStateMachine.transitFromOutOfServiceToInServiceOnStartup)"/>
+        </transition>
+        <onexit>
+            <raise event="callMethod(ATMStateMachine.exitOutOfService)"/>
+        </onexit>
+    </state>
+    <state id="Loading">
+        <onentry>
+            <raise event="callMethod(ATMStateMachine.entryLoading)"/>
+        </onentry>
+        <transition cond="Always" event="ConnectionClosed" target="Disconnected">
+            <raise event="callMethod(ATMStateMachine.transitFromLoadingToDisconnectedOnConnectionClosed)"/>
+        </transition>
+        <transition cond="Always" event="LoadSuccess" target="InService">
+            <raise event="callMethod(ATMStateMachine.transitFromLoadingToInServiceOnLoadSuccess)"/>
+        </transition>
+        <transition cond="Always" event="LoadFail" target="OutOfService">
+            <raise event="callMethod(ATMStateMachine.transitFromLoadingToOutOfServiceOnLoadFail)"/>
+        </transition>
+        <onexit>
+            <raise event="callMethod(ATMStateMachine.exitLoading)"/>
+        </onexit>
+    </state>
+    <state id="Idle">
+        <onentry>
+            <raise event="callMethod(ATMStateMachine.entryIdle)"/>
+        </onentry>
+        <transition cond="Always" event="Connected" target="Loading">
+            <raise event="callMethod(ATMStateMachine.transitFromIdleToLoadingOnConnected)"/>
+        </transition>
+        <onexit>
+            <raise event="callMethod(ATMStateMachine.exitIdle)"/>
+        </onexit>
+    </state>
+    <final id="Final"/>
+</scxml>

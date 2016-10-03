@@ -1,0 +1,30 @@
+'''
+Created on Dec 10, 2013
+
+@author: yang
+'''
+import matplotlib.pyplot as plt
+f2 = open("result2.txt","r")      # optimal scheduler
+f3 = open("result3.txt","r")      # optimal scheduler
+i=1
+y1 = []
+y2 = []
+y3 = []
+while(i<=20000):
+    line2 = f2.readline().rstrip()
+    line3 = f3.readline().rstrip()
+    y3.append(line)
+    i = i+1
+#y = s1.split("\n")
+x = 1
+t = []
+while(x <= len(y3)):
+    t.append(x)
+    x = x + 1
+plt.plot(t,y,'r',label = 'fibonacci')
+plt.axis([0,len(t),0,100])
+plt.xlabel("time (t)")
+plt.ylabel("Stack size")
+plt.legend(loc='lower right')
+plt.savefig("stacksize_usage.pdf",bbox_inches=0,format='pdf')
+plt.show()

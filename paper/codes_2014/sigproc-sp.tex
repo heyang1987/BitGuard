@@ -1,0 +1,161 @@
+\documentclass{acm_proc_article-sp}
+
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{url}
+%\usepackage{hyperref}
+\usepackage{comment}
+\usepackage{listings}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{tabularx}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{amsmath}
+
+\urlstyle{same}
+
+\lstset{frame=tb,
+  language=C,
+  aboveskip=3mm,
+  belowskip=3mm,
+  frame=single,
+  showtabs=false,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=left,
+  numberstyle=\small,
+  numbersep=5pt,
+  keywordstyle=\color{blue},
+  morekeywords={bool, uint8_t, uint16_t, int8_t},
+  commentstyle=\color{green},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3,
+  xleftmargin=12pt,
+  xrightmargin=5pt,
+  captionpos=b
+}
+\lstset{emph={%  
+    Configuration, Target, Platform, MCU, Interface, Version, 
+    Global, ResponseTimeout, InterByteTimeout, Retry,
+    Uart, BaudRate, Data, Stop, Parity, 
+    Function, Name, EntryPoint, Command, ResponseMatch, Delay, Dependency, DName
+    },emphstyle={\color{red}\textbf}%
+}%
+
+\begin{document}
+
+%don't want date printed
+\date{}
+
+\title{\Large \bf A Software Approach to Protecting Embedded System Memory\\ from Single Event Upsets}
+
+%\subtitle{[Subtitle]
+%\titlenote{Sub title footnote}}
+%
+% You need the command \numberofauthors to handle the 'placement
+% and alignment' of the authors beneath the title.
+%
+% For aesthetic reasons, we recommend 'three authors at a time'
+% i.e. three 'name/affiliation blocks' be placed beneath the title.
+%
+% NOTE: You are NOT restricted in how many 'rows' of
+% "name/affiliations" may appear. We just ask that you restrict
+% the number of 'columns' to three.
+%
+% Because of the available 'opening page real-estate'
+% we ask you to refrain from putting more than six authors
+% (two rows with three columns) beneath the article title.
+% More than six makes the first-page appear very cluttered indeed.
+%
+% Use the \alignauthor commands to handle the names
+% and affiliations for an 'aesthetic maximum' of six authors.
+% Add names, affiliations, addresses for
+% the seventh etc. author(s) as the argument for the
+% \additionalauthors command.
+% These 'additional authors' will be output/set for you
+% without further effort on your part as the last section in
+% the body of your article BEFORE References or any Appendices.
+
+
+\numberofauthors{1} %  in this sample file, there are a *total*
+% of EIGHT authors. SIX appear on the 'first-page' (for formatting
+% reasons) and the remaining two appear in the \additionalauthors section.
+%
+\author{
+% You can go ahead and credit any number of authors here,
+% e.g. one 'row of three' or two rows (consisting of one row of three
+% and a second row of one, two or three).
+%
+% The command \alignauthor (no curly braces needed) should
+% precede each author name, affiliation/snail-mail address and
+% e-mail address. Additionally, tag each line of
+% affiliation/address with \affaddr, and tag the
+% e-mail address with \email.
+%
+% 1st. author
+% \alignauthor Jiannan Zhai, Yangyang He, Fred S. Switzer, Jason O. Hallstrom\\
+ \alignauthor Author1, Author2, Author3, Author4\\
+%    \affaddr{School of Computing, Clemson University, Clemson SC, 29634-0974  USA}\\
+    %\affaddr{}
+%    \affaddr{ \{jzhai, yyhe, skyler, jasonoh\}@clemson.edu}\\
+    \affaddr{ \{author1, author2, author3, author4\}@institution}\\
+}
+% There's nothing stopping you putting the seventh, eighth, etc.
+% author on the opening page (as the 'third row') but we ask,
+% for aesthetic reasons that you place these 'additional authors'
+% in the \additional authors block, viz.
+%\additionalauthors{Additional authors: John Smith (The Th{\o}rv{\"a}ld Group,
+%email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
+%(The Kumquat Consortium, email: {\texttt{jpkumquat@consortium.net}}).}
+%\date{30 July 1999}
+% Just remember to make sure that the TOTAL number of authors
+% is the number that will appear on the first page PLUS the
+% number that will appear in the \additionalauthors section.
+
+\maketitle
+
+
+\input{abstract.tex}
+
+% A category with the (minimum) three required fields
+%\category{H.4}{Information Systems Applications}{Miscellaneous}
+%A category including the fourth, optional field follows...
+%\category{D.2.8}{Software Engineering}{Metrics}[complexity measures, performance measures]
+
+%\terms{Terms}
+
+%\keywords{ACM proceedings, \LaTeX, text tagging} % NOT required for Proceedings
+
+\input{introduction.tex}
+\input{related_work.tex}
+\input{background.tex}
+\input{design.tex}
+\input{evaluation.tex}
+\input{conclusion.tex}
+\input{acknowledgments.tex}
+
+%
+% The following two commands are all you need in the
+% initial runs of your .tex file to
+% produce the bibliography for the citations in your paper.
+
+{\footnotesize \bibliographystyle{acm}
+\bibliography{./sigproc}}
+
+% sigproc.bib is the name of the Bibliography in this case
+% You must have a proper ".bib" file
+%  and remember to run:
+% latex bibtex latex latex
+% to resolve all references
+%
+% ACM needs 'a single self-contained file'!
+%
+
+\end{document}

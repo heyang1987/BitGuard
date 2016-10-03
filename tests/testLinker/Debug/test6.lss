@@ -1,0 +1,162 @@
+
+test6.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000004  00800100  0000012c  000001e0  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000012c  00000000  00000000  000000b4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000006  00800104  00800104  000001e4  2**0
+                  ALLOC
+  3 .callerstack  00000004  0080010a  0080010a  000001e4  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  4 .stab         00000f24  00000000  00000000  000001e8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  5 .stabstr      00001114  00000000  00000000  0000110c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 38 00 	jmp	0x70	; 0x70 <__ctors_end>
+   4:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+   8:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+   c:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  10:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  14:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  18:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  1c:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  20:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  24:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  28:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  2c:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  30:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  34:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  38:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  3c:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  40:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  44:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  48:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  4c:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  50:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  54:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  58:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  5c:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  60:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  64:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  68:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  6c:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+
+00000070 <__ctors_end>:
+  70:	11 24       	eor	r1, r1
+  72:	1f be       	out	0x3f, r1	; 63
+  74:	cf ef       	ldi	r28, 0xFF	; 255
+  76:	d0 e1       	ldi	r29, 0x10	; 16
+  78:	de bf       	out	0x3e, r29	; 62
+  7a:	cd bf       	out	0x3d, r28	; 61
+
+0000007c <__do_copy_data>:
+  7c:	11 e0       	ldi	r17, 0x01	; 1
+  7e:	a0 e0       	ldi	r26, 0x00	; 0
+  80:	b1 e0       	ldi	r27, 0x01	; 1
+  82:	ec e2       	ldi	r30, 0x2C	; 44
+  84:	f1 e0       	ldi	r31, 0x01	; 1
+  86:	02 c0       	rjmp	.+4      	; 0x8c <.do_copy_data_start>
+
+00000088 <.do_copy_data_loop>:
+  88:	05 90       	lpm	r0, Z+
+  8a:	0d 92       	st	X+, r0
+
+0000008c <.do_copy_data_start>:
+  8c:	a4 30       	cpi	r26, 0x04	; 4
+  8e:	b1 07       	cpc	r27, r17
+  90:	d9 f7       	brne	.-10     	; 0x88 <.do_copy_data_loop>
+
+00000092 <__do_clear_bss>:
+  92:	11 e0       	ldi	r17, 0x01	; 1
+  94:	a4 e0       	ldi	r26, 0x04	; 4
+  96:	b1 e0       	ldi	r27, 0x01	; 1
+  98:	01 c0       	rjmp	.+2      	; 0x9c <.do_clear_bss_start>
+
+0000009a <.do_clear_bss_loop>:
+  9a:	1d 92       	st	X+, r1
+
+0000009c <.do_clear_bss_start>:
+  9c:	aa 30       	cpi	r26, 0x0A	; 10
+  9e:	b1 07       	cpc	r27, r17
+  a0:	e1 f7       	brne	.-8      	; 0x9a <.do_clear_bss_loop>
+  a2:	0e 94 57 00 	call	0xae	; 0xae <main>
+  a6:	0c 94 95 00 	jmp	0x12a	; 0x12a <_exit>
+
+000000aa <__bad_interrupt>:
+  aa:	0c 94 00 00 	jmp	0	; 0x0 <__heap_end>
+
+000000ae <main>:
+uint8_t a=3;
+uint16_t b=5;
+uint32_t callerstack1 __attribute__ ((section (".callerstack"))) = 4;
+
+int main(){
+  ae:	cf 93       	push	r28
+  b0:	df 93       	push	r29
+  b2:	cd b7       	in	r28, 0x3d	; 61
+  b4:	de b7       	in	r29, 0x3e	; 62
+	extern char *__callerstack_start;
+	printf("%s\n",__callerstack_start);
+  b6:	80 91 0a 01 	lds	r24, 0x010A
+  ba:	90 91 0b 01 	lds	r25, 0x010B
+  be:	0e 94 62 00 	call	0xc4	; 0xc4 <puts>
+    while(1){}
+  c2:	ff cf       	rjmp	.-2      	; 0xc2 <main+0x14>
+
+000000c4 <puts>:
+  c4:	0f 93       	push	r16
+  c6:	1f 93       	push	r17
+  c8:	cf 93       	push	r28
+  ca:	df 93       	push	r29
+  cc:	8c 01       	movw	r16, r24
+  ce:	e0 91 06 01 	lds	r30, 0x0106
+  d2:	f0 91 07 01 	lds	r31, 0x0107
+  d6:	83 81       	ldd	r24, Z+3	; 0x03
+  d8:	81 ff       	sbrs	r24, 1
+  da:	1f c0       	rjmp	.+62     	; 0x11a <puts+0x56>
+  dc:	c0 e0       	ldi	r28, 0x00	; 0
+  de:	d0 e0       	ldi	r29, 0x00	; 0
+  e0:	0a c0       	rjmp	.+20     	; 0xf6 <puts+0x32>
+  e2:	fd 01       	movw	r30, r26
+  e4:	20 85       	ldd	r18, Z+8	; 0x08
+  e6:	31 85       	ldd	r19, Z+9	; 0x09
+  e8:	bd 01       	movw	r22, r26
+  ea:	f9 01       	movw	r30, r18
+  ec:	09 95       	icall
+  ee:	89 2b       	or	r24, r25
+  f0:	11 f0       	breq	.+4      	; 0xf6 <puts+0x32>
+  f2:	cf ef       	ldi	r28, 0xFF	; 255
+  f4:	df ef       	ldi	r29, 0xFF	; 255
+  f6:	f8 01       	movw	r30, r16
+  f8:	81 91       	ld	r24, Z+
+  fa:	8f 01       	movw	r16, r30
+  fc:	a0 91 06 01 	lds	r26, 0x0106
+ 100:	b0 91 07 01 	lds	r27, 0x0107
+ 104:	88 23       	and	r24, r24
+ 106:	69 f7       	brne	.-38     	; 0xe2 <puts+0x1e>
+ 108:	fd 01       	movw	r30, r26
+ 10a:	20 85       	ldd	r18, Z+8	; 0x08
+ 10c:	31 85       	ldd	r19, Z+9	; 0x09
+ 10e:	bd 01       	movw	r22, r26
+ 110:	8a e0       	ldi	r24, 0x0A	; 10
+ 112:	f9 01       	movw	r30, r18
+ 114:	09 95       	icall
+ 116:	89 2b       	or	r24, r25
+ 118:	11 f0       	breq	.+4      	; 0x11e <puts+0x5a>
+ 11a:	cf ef       	ldi	r28, 0xFF	; 255
+ 11c:	df ef       	ldi	r29, 0xFF	; 255
+ 11e:	ce 01       	movw	r24, r28
+ 120:	df 91       	pop	r29
+ 122:	cf 91       	pop	r28
+ 124:	1f 91       	pop	r17
+ 126:	0f 91       	pop	r16
+ 128:	08 95       	ret
+
+0000012a <_exit>:
+ 12a:	ff cf       	rjmp	.-2      	; 0x12a <_exit>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Recorder/Copy of BitGuardRecorder.py&apos; to &apos;recorder.py&apos;" description="Rename resource &apos;Copy of BitGuardRecorder.py&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Copy of BitGuardRecorder.py" name="recorder.py" stamp="1387389507221" updateReferences="true"/>
+</session>

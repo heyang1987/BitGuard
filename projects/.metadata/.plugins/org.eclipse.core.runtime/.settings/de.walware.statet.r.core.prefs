@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+r.environments/default_configuration.name=user-local-4cjm0nut8rk
+r.environments/user-local-4cjm0nut8rk/CheckedR.version=2.15.2
+r.environments/user-local-4cjm0nut8rk/env.r_bits.count=64
+r.environments/user-local-4cjm0nut8rk/env.r_doc.dir=/usr/share/R/doc
+r.environments/user-local-4cjm0nut8rk/env.r_home=/usr/lib/R
+r.environments/user-local-4cjm0nut8rk/env.r_include.dir=/usr/share/R/include
+r.environments/user-local-4cjm0nut8rk/env.r_libs.r.common=
+r.environments/user-local-4cjm0nut8rk/env.r_libs.r.default=${env_var\:R_HOME}/library
+r.environments/user-local-4cjm0nut8rk/env.r_libs.r.site=/usr/local/lib/R/site-library\u001E${env_var\:R_HOME}/site-library\u001E${env_var\:R_HOME}/library
+r.environments/user-local-4cjm0nut8rk/env.r_libs.r.user=${user_home}/R/x86_64-pc-linux-gnu-library/2.15
+r.environments/user-local-4cjm0nut8rk/env.r_os.type=unix
+r.environments/user-local-4cjm0nut8rk/env.r_share.dir=/usr/share/R/share
+r.environments/user-local-4cjm0nut8rk/env.sub_arch=x86_64
+r.environments/user-local-4cjm0nut8rk/name=R-2.15.2
+r.environments/user-local-4cjm0nut8rk/type=user-local
+r.environments/version=2

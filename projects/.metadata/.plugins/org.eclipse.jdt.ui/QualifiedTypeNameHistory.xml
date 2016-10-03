@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Package.File"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="edu.clemson.dsrg.bg.DataStore"/>
+<fullyQualifiedTypeName name="edu.clemson.dsrg.bg.instrumenter.Instrument"/>
+<fullyQualifiedTypeName name="edu.clemson.dsrg.bg.instrumenter.InstrumentStateMachine.InstrumentState"/>
+<fullyQualifiedTypeName name="org.squirrelframework.foundation.fsm.annotation.State"/>
+<fullyQualifiedTypeName name="org.squirrelframework.foundation.fsm.impl.AbstractStateMachine"/>
+<fullyQualifiedTypeName name="org.squirrelframework.foundation.fsm.impl.AbstractStateMachineWithoutContext"/>
+<fullyQualifiedTypeName name="org.squirrelframework.foundation.fsm.StateMachineBuilder"/>
+<fullyQualifiedTypeName name="org.squirrelframework.foundation.fsm.StateMachineBuilderFactory"/>
+<fullyQualifiedTypeName name="com.sun.istack.internal.Builder"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.PUBLIC_MEMBER"/>
+<fullyQualifiedTypeName name="edu.clemson.dsrg.bg.instrumenter.InstrumentContext"/>
+<fullyQualifiedTypeName name="edu.clemson.dsrg.bg.instrumenter.InstrumentController"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="edu.clemson.dsrg.bg.scanner.ScannerReader"/>
+<fullyQualifiedTypeName name="edu.clemson.dsrg.bg.instrumenter.InstrumentStates"/>
+<fullyQualifiedTypeName name="edu.clemson.dsrg.bg.instrumenter.InstrumentController.InstrumentState"/>
+<fullyQualifiedTypeName name="org.squirrelframework.foundation.fsm.annotation.Transitions"/>
+<fullyQualifiedTypeName name="org.squirrelframework.foundation.fsm.annotation.Transit"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="edu.clemson.dsrg.bg.instrumenter.InstrumentController.InstrumentEvent"/>
+<fullyQualifiedTypeName name="edu.clemson.dsrg.bg.definition.AssemblyDefinition"/>
+<fullyQualifiedTypeName name="edu.clemson.dsrg.bgr.StackUsageRecorder"/>
+</qualifiedTypeNameHistroy>

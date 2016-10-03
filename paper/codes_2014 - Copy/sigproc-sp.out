@@ -1,0 +1,25 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Related Work}{}% 2
+\BOOKMARK [1][-]{section.3}{Background}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Stack Frame}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Function Calls}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{AVR Toolchain Optimization Levels}{section.3}% 6
+\BOOKMARK [1][-]{section.4}{System Design}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Supporting Memory Sections}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.2}{Injected Code Segments}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.3}{The ASM Handler}{section.4}% 10
+\BOOKMARK [3][-]{subsubsection.4.3.1}{ASM Metadata}{subsection.4.3}% 11
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Reader}{subsection.4.3}% 12
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Scanner}{subsection.4.3}% 13
+\BOOKMARK [3][-]{subsubsection.4.3.4}{Injector}{subsection.4.3}% 14
+\BOOKMARK [2][-]{subsection.4.4}{Modified Function Execution Process}{section.4}% 15
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Modified Function Invocation Process}{subsection.4.4}% 16
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Modified Function Return Process}{subsection.4.4}% 17
+\BOOKMARK [1][-]{section.5}{Evaluation}{}% 18
+\BOOKMARK [2][-]{subsection.5.1}{Test Applications}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.2}{Validation}{section.5}% 20
+\BOOKMARK [2][-]{subsection.5.3}{Performance}{section.5}% 21
+\BOOKMARK [2][-]{subsection.5.4}{Progressive Test}{section.5}% 22
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 23
+\BOOKMARK [1][-]{section.7}{Acknowledgments}{}% 24
+\BOOKMARK [1][-]{section.8}{References}{}% 25

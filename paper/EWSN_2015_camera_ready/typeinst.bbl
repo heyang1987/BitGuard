@@ -1,0 +1,103 @@
+\begin{thebibliography}{10}
+
+\bibitem{Celler2003SOI}
+{\sc Celler, G.~K., and Cristoloveanu, S.}
+\newblock {Frontiers of silicon-on-insulator}.
+\newblock {\em Journal of Applied Physics 93}, 9 (2003), 4955--4978.
+
+\bibitem{ulta2013}
+{\sc Czajkowski, D., and McCartha, M.}
+\newblock Ultra low-power space computer leveraging embedded seu mitigation.
+\newblock In {\em IEEE Aerospace Conf\/} (2003), vol.~5, pp.~2315--2328.
+
+\bibitem{intel:chip:size}
+{\sc Darling, P.}
+\newblock {Intel to Invest More than 5 Billion to Build New Factory in
+  Arizona}, October 2013.
+\newblock
+  \url{newsroom.intel.com/community/intel_newsroom/blog/2011/02/18/intel-to-invest-more-than-5-billion}-\url{to-build-new-factory-in-arizona}.
+
+\bibitem{CATA09seuonVirtex}
+{\sc Dutton, B.~F., and Stroud, C.~E.}
+\newblock {Single Event Upset Detection and Correction in Virtex-4 and Virtex-5
+  FPGAs}.
+\newblock In {\em CATA\/} (09), W.~L. 0025, Ed., ISCA, pp.~57--62.
+
+\bibitem{crc16}
+{\sc Geluso, J.}
+\newblock {CRC16-CCITT}, Jan 2014.
+\newblock \url{srecord.sourceforge.net/crc16-ccitt.html}.
+
+\bibitem{huang1986watchdog}
+{\sc Huang, L., and Selman, J.~J.}
+\newblock Watchdog timer, Dec.~2 1986.
+\newblock US Patent 4,627,060.
+
+\bibitem{Irom2002SOI}
+{\sc Irom, F., Farmanesh, F., Johnston, A., Swift, G., and Millward, D.}
+\newblock {Single-event upset in commercial silicon-on-insulator PowerPC
+  microprocessors}.
+\newblock {\em Nuclear Science, IEEE Transactions on 49}, 6 (2002), 3148--3155.
+
+\bibitem{TMR}
+{\sc Lyons, R., and Vanderkulk, W.}
+\newblock {The Use of Triple-Modular Redundancy to Improve Computer
+  Reliability}.
+\newblock {\em IBM JRD 6}, 2 (1962), 200--209.
+
+\bibitem{space:shuttle:list}
+{\sc NASA}.
+\newblock {Space Shuttle Era Facts}, October 2013.
+
+\bibitem{nasa_coding_standard}
+{\sc NASA}.
+\newblock {JPL Institutional Coding Standard for the C Programming Language},
+  April 2014.
+\newblock \url{lars-lab.jpl.nasa.gov/JPL_Coding_Standard_C.pdf}.
+
+\bibitem{oh2002error}
+{\sc Oh, N., , et~al.}
+\newblock Error detection by duplicated instructions in super-scalar
+  processors.
+\newblock {\em IEEE Transactions on Reliability 51}, 1 (2002), 63--75.
+
+\bibitem{avrsimide}
+{\sc OshonSoft}.
+\newblock {AVR SIMULATOR IDE}, Jan 2014.
+\newblock \url{www.oshonsoft.com/avr.html}.
+
+\bibitem{Shirvani2001EDAC}
+{\sc Shirvani, P., Saxena, N., and McCluskey, E.}
+\newblock {Software-implemented EDAC protection against SEUs}.
+\newblock {\em Reliability, IEEE Transactions on 49}, 3 (2001), 273--284.
+
+\bibitem{linkerscript}
+{\sc sourceware}.
+\newblock {Linker Scripts}, 10 13.
+\newblock \url{sourceware.org/binutils/docs/ld/Scripts.html}.
+
+\bibitem{satellite:total}
+{\sc ucsusa}.
+\newblock {USC Satellite Database}, October 2013.
+\newblock
+  \url{www.ucsusa.org/nuclear_weapons_and_global_security/space_weapons/technical_issues/ucs-satellite-database.html}.
+
+\bibitem{underwood1992observations}
+{\sc Underwood, C., Ward, J., Dyer, C., and Sims, A.}
+\newblock Observations of single-event upsets in non-hardened high-density
+  srams in sun-synchronous orbit.
+\newblock {\em Nuclear Science, IEEE Transactions on 39}, 6 (1992), 1817--1827.
+
+\bibitem{underwood1992sramorbit}
+{\sc Underwood, C., Ward, J., Dyer, C., and Sims, A.}
+\newblock {Observations of single-event upsets in non-hardened high-density
+  SRAMs in Sun-synchronous orbit}.
+\newblock {\em Nuclear Science, IEEE Transactions on 39}, 6 (1992), 1817--1827.
+
+\bibitem{fundamentals:space}
+{\sc Vincent L.~Pisacane, H. K.~U.}
+\newblock {Embedded Software Systems}.
+\newblock In {\em Fundamentals of Space Systems Second Edition}. Oxford
+  University Press, New York, 2005.
+
+\end{thebibliography}

@@ -1,0 +1,8 @@
+INDEX VERSION 1.126+C:\Users\Yang\Dropbox\Research\BitGuard\projects\.metadata\.plugins\org.eclipse.jdt.core
+1513435607.index
+1069280872.index
+4281958231.index
+390537093.index
+1299426766.index
+787137069.index
+3440043284.index

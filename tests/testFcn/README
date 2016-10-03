@@ -1,0 +1,9 @@
+
+
+
+Memory copy precedure needs 7 registers:
+r1: temp register to transfer data;
+r24, r25: memory block's size
+r26, r27: destination address
+r30, r31: source address
+ 

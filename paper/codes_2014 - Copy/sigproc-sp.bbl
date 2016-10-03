@@ -1,0 +1,162 @@
+\begin{thebibliography}{10}
+
+\bibitem{atmel:avr}
+{\sc Atmel}.
+\newblock {Atmel {AVR} 8-bit and 32-bit Microcontrollers}, October 2013.
+\newblock \url{www.atmel.com/products/microcontrollers/avr/default.aspx}.
+
+\bibitem{Celler2003SOI}
+{\sc Celler, G.~K., and Cristoloveanu, S.}
+\newblock {Frontiers of silicon-on-insulator}.
+\newblock {\em Journal of Applied Physics 93}, 9 (2003), 4955--4978.
+
+\bibitem{RAID}
+{\sc Chen, P.~M., Lee, E.~K., Gibson, G.~A., Katz, R.~H., and Patterson, D.~A.}
+\newblock {RAID: High-performance, Reliable Secondary Storage}.
+\newblock {\em ACM Comput. Surv. 26}, 2 (June 1994), 145--185.
+
+\bibitem{space:station:almaz}
+{\sc Coppinger, R.}
+\newblock {US, Russian Capsules Vie for Orbital Domination}, October 2013.
+\newblock
+  \url{www.space.com/8968-piece-chinese-space-station-assembled-2011-launch.html}.
+
+\bibitem{intel:chip:size}
+{\sc Darling, P.}
+\newblock {Intel to Invest More than 5 Billion to Build New Factory in
+  Arizona}, October 2013.
+\newblock
+  \url{newsroom.intel.com/community/intel_newsroom/blog/2011/02/18/intel-to-invest-more-than-5-billion}-\url{to-build-new-factory-in-arizona}.
+
+\bibitem{CATA09seuonVirtex}
+{\sc Dutton, B.~F., and Stroud, C.~E.}
+\newblock {Single Event Upset Detection and Correction in Virtex-4 and Virtex-5
+  FPGAs}.
+\newblock In {\em CATA\/} (2009), W.~L. 0025, Ed., ISCA, pp.~57--62.
+
+\bibitem{ErrorCorrectingCodes}
+{\sc Elias, P.}
+\newblock {Error-free Coding}.
+\newblock {\em Information Theory, Transactions of the IRE Professional Group
+  on 4}, 4 (1954), 29--37.
+
+\bibitem{crc16}
+{\sc Geluso, J.}
+\newblock {CRC16-CCITT}, January 2014.
+\newblock \url{srecord.sourceforge.net/crc16-ccitt.html}.
+
+\bibitem{hoste2008cole}
+{\sc Hoste, K., and Eeckhout, L.}
+\newblock {Cole: compiler optimization level exploration}.
+\newblock In {\em Proceedings of the 6th annual IEEE/ACM international
+  symposium on Code generation and optimization\/} (2008), ACM, pp.~165--174.
+
+\bibitem{Irom2002SOI}
+{\sc Irom, F., Farmanesh, F., Johnston, A., Swift, G., and Millward, D.}
+\newblock {Single-event upset in commercial silicon-on-insulator PowerPC
+  microprocessors}.
+\newblock {\em Nuclear Science, IEEE Transactions on 49}, 6 (2002), 3148--3155.
+
+\bibitem{ariane5}
+{\sc Lions, J.~L.}
+\newblock {Ariane 5 Flight 501 Failure Report}, October 2013.
+\newblock \url{www.ima.umn.edu/~arnold/disasters/ariane5rep.html}.
+
+\bibitem{TMR}
+{\sc Lyons, R., and Vanderkulk, W.}
+\newblock {The Use of Triple-Modular Redundancy to Improve Computer
+  Reliability}.
+\newblock {\em IBM Journal of Research and Development 6}, 2 (1962), 200--209.
+
+\bibitem{mhatreSeuTmr}
+{\sc Mhatre, N., and Aras, S.}
+\newblock {A Hybrid Approach to Radiation Fault Tolerance in Small Satellite
+  Applications}.
+\newblock In {\em Proc. 62\textsuperscript{nd} International Astronautical
+  Congress\/} (2011).
+
+\bibitem{space:station:tiangong2}
+{\sc Mokowitz, C.}
+\newblock {First Piece Of Chinese Space Station Assembled For 2011 Launch},
+  October 2013.
+\newblock
+  \url{www.space.com/8968-piece-chinese-space-station}-\url{assembled-2011-launch.html}.
+
+\bibitem{space:shuttle:list}
+{\sc NASA}.
+\newblock {Space Shuttle Era Facts}, October 2013.
+
+\bibitem{nasa_coding_standard}
+{\sc NASA}.
+\newblock {JPL Institutional Coding Standard for the C Programming Language},
+  April 2014.
+\newblock \url{lars-lab.jpl.nasa.gov/JPL_Coding_Standard_C.pdf}.
+
+\bibitem{avrsimide}
+{\sc OshonSoft}.
+\newblock {AVR SIMULATOR IDE}, January 2014.
+\newblock \url{www.oshonsoft.com/avr.html}.
+
+\bibitem{She2012Latch}
+{\sc She, X., Li, N., and Tong, J.}
+\newblock {SEU Tolerant Latch Based on Error Detection}.
+\newblock {\em Nuclear Science, IEEE Transactions on 59}, 1 (2012), 211--214.
+
+\bibitem{Shirvani2001EDAC}
+{\sc Shirvani, P., Saxena, N., and McCluskey, E.}
+\newblock {Software-implemented EDAC protection against SEUs}.
+\newblock {\em Reliability, IEEE Transactions on 49}, 3 (2001), 273--284.
+
+\bibitem{sputnik1}
+{\sc Siddiqi, A.~A.}
+\newblock In {\em Sputnik and the Soviet Space Challenge}. University Press of
+  Florida, Gainesville FL, 2003, p.~155.
+
+\bibitem{linkerscript}
+{\sc sourceware}.
+\newblock {Linker Scripts}, October 2013.
+\newblock \url{sourceware.org/binutils/docs/ld/Scripts.html}.
+
+\bibitem{satellite:next10years}
+{\sc spacedaily}.
+\newblock {More Than 1200 Satellites To Be Launched Over The Next 10 Years},
+  October 2013.
+\newblock
+  \url{www.spacedaily.com/reports/More_Than_1200_Satellites_To_Be_Launched_Over_The_Next_10_Years_999.html}.
+
+\bibitem{space:station:tiangong3}
+{\sc Tania~Branigan, I.~S.}
+\newblock {China Unveils Rival to International}, October 2013.
+\newblock
+  \url{www.theguardian.com/world/2011/apr/26/china-space-station-tiangong}.
+
+\bibitem{satellite:total}
+{\sc ucsusa}.
+\newblock {USC Satellite Database}, October 2013.
+\newblock
+  \url{www.ucsusa.org/nuclear_weapons_and_global_security/space_weapons/technical_issues/ucs-satellite-database.html}.
+
+\bibitem{underwood1992sramorbit}
+{\sc Underwood, C., Ward, J., Dyer, C., and Sims, A.}
+\newblock {Observations of single-event upsets in non-hardened high-density
+  SRAMs in Sun-synchronous orbit}.
+\newblock {\em Nuclear Science, IEEE Transactions on 39}, 6 (1992), 1817--1827.
+
+\bibitem{underwood1992observations}
+{\sc Underwood, C., Ward, J., Dyer, C., and Sims, A.}
+\newblock Observations of single-event upsets in non-hardened high-density
+  srams in sun-synchronous orbit.
+\newblock {\em Nuclear Science, IEEE Transactions on 39}, 6 (1992), 1817--1827.
+
+\bibitem{fundamentals:space}
+{\sc Vincent L.~Pisacane, H. K.~U.}
+\newblock {Embedded Software Systems}.
+\newblock In {\em Fundamentals of Space Systems Second Edition}. Oxford
+  University Press, New York, 2005.
+
+\bibitem{space:station:opsek}
+{\sc Zak, A.}
+\newblock {Russia 'to save its ISS modules'}, October 2013.
+\newblock \url{news.bbc.co.uk/2/hi/science/nature/8064060.stm}.
+
+\end{thebibliography}

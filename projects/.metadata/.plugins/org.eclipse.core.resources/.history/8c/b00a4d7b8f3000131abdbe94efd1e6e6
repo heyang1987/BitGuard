@@ -1,0 +1,80 @@
+/**
+ * 
+ */
+package edu.clemson.dsrg.bg.instrumenter;
+/**
+ * @author yang
+ *
+ */
+import java.util.Map;
+
+import org.squirrelframework.foundation.fsm.Condition;
+import org.squirrelframework.foundation.fsm.ImmutableState;
+import org.squirrelframework.foundation.fsm.StateMachineBuilder;
+import org.squirrelframework.foundation.fsm.StateMachineBuilderFactory;
+import org.squirrelframework.foundation.fsm.annotation.State;
+import org.squirrelframework.foundation.fsm.annotation.States;
+import org.squirrelframework.foundation.fsm.annotation.Transit;
+import org.squirrelframework.foundation.fsm.annotation.Transitions;
+import org.squirrelframework.foundation.fsm.impl.AbstractStateMachine;
+import org.squirrelframework.foundation.fsm.impl.AbstractStateMachineWithoutContext;
+
+import edu.clemson.dsrg.bg.instrumenter.InstrumentController.InstrumentState;
+import edu.clemson.dsrg.bg.instrumenter.InstrumentController.InstrumentEvent;
+import edu.clemson.dsrg.bg.instrumenter.InstrumentContext;
+
+@States({
+	@State(name="MAIN_BACKUP_REG",initialState=true),
+	@State(name="MAIN_CHANGE_STACK"),
+	@State(name="MAIN_PROGRAM"),
+	@State(name="MAIN_INFI_LOOP")
+})
+@Transitions({
+	@Transit(from = "MAIN_BACKUP_REG", to = "MAIN_CHANGE_STACK", on = "SBIW", callMethod = "onSBIW"),
+	@Transit(from = "MAIN_BACKUP_REG", to = "MAIN_PROGRAM", on = "GoToProgram", callMethod = "onGoToProgram")
+})
+
+public class InstrumentController extends AbstractStateMachine<InstrumentController, InstrumentState, InstrumentEvent, InstrumentContext> {
+
+	public enum InstrumentState {
+		MAIN_BACKUP_REG, MAIN_CHANGE_STACK, MAIN_PROGRAM, MAIN_INFI_LOOP
+	}
+	
+	public enum InstrumentEvent {
+		SBIW, GoToProgram, ADIW, ProgramToRecoverStack
+	}
+	
+	public static class ContinueRunningCondition implements Condition<InstrumentContext> {
+		@Override
+        public boolean isSatisfied(InstrumentContext context) {
+			return false;
+        }
+	}
+	
+    protected InstrumentController(
+            ImmutableState<InstrumentController, InstrumentState, InstrumentEvent, InstrumentContext> initialState,
+            Map<InstrumentState, ImmutableState<InstrumentController, InstrumentState, InstrumentEvent, InstrumentContext>> states) {
+        super(initialState, states);
+    }
+    
+    public void onSBIW(InstrumentState from, InstrumentState to, InstrumentEvent event, InstrumentContext context) {
+    	//TODO
+    	//System.out.println(to);
+    }
+    
+    public void onGoToProgram(InstrumentState from, InstrumentState to, InstrumentEvent event, InstrumentContext context) {
+    	//TODO
+    	//System.out.println(to);
+    }
+    /*
+     * Unit Test
+     */
+    /*
+   	public void main(String[] args){
+   		InstrumentContext instrumentContext = null;
+   		onSBIW(InstrumentState.MAIN_BACKUP_REG, InstrumentState.MAIN_CHANGE_STACK,InstrumentEvent.SBIW,instrumentContext);
+   	}
+	*/
+}
+
+

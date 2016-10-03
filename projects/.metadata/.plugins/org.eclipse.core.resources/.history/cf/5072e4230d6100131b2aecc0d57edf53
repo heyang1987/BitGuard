@@ -1,0 +1,10 @@
+# TODO: Add comment
+# 
+# Author: yang
+###############################################################################
+
+setwd("/home/yang/Dropbox/Research/BitGuard/projects/RTest/")
+x <- 1:50
+y <- rnorm(50)
+
+plot(x,y)

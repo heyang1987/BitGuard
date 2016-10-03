@@ -1,0 +1,14 @@
+import serial
+import numpy as np
+
+ser = serial.Serial('/dev/ttyUSB0', 115200)
+#ser = serial.Serial('COM2', 115200)
+while(ser.isOpen() is False):
+    ser.open()
+
+# start data collection
+while(1):
+    data = ser.readline().rstrip()
+    #data = ser.readline().rstrip().encode('hex') # read data from serial port and strip line endings
+    #data = int(ser.readline().rstrip().encode('hex'),16) # read data from serial port and strip line endings
+    print data

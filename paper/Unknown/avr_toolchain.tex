@@ -1,0 +1,19 @@
+\subsection{Atmel AVR Toolchain}
+Atmel AVR Toolchain is a collection of tools used to generate executable programs for AVR microprocessors. The AVR Toolchain consists of the following tools.
+
+\begin{itemize}
+
+\item \textit{avr-gcc}, an extension of the GNU GCC, is a cross compiler which translates a high-level language, e.g., C and C++, to assembly code for the AVR microprocessors.
+
+\item \textit{avr-as} is the assembler which translates the assembly program to object file for the AVR microprocessors.
+
+\item \textit{avr-ld} is the linker which uses the Linker Script to combine object modules into an executable image suitable for loading into memory of the AVR microprocessors. By using customized Linker Script, the default memory structure of the AVR microprocessor can be changed and new data structures can be added.
+
+\item \textit{avr-libc} is a standard C library which contains many standard C routines as well as many additional AVR-specific library function.
+
+\end{itemize}
+
+As a matter of convenience, the AVR Toolchain could be used to compile, assemble, and link C program in one command. But to modify the code of the AVR applications in assembly-level and use customized Linker Script, these steps need to be done individually.
+
+
+When the avr-gcc compiler is used to compile the source code, C program, to assembly program, there are 5 controllable optimization levels \cite{hoste2008cole}. We implement our approach at level \textbf{O0}, which is without optimization. since the generated assembly code will show the original behavior of the source program without optimization, the operations to stack can be displayed more obviously. Meanwhile, it would be more convenient for developing, debugging, and evaluating.

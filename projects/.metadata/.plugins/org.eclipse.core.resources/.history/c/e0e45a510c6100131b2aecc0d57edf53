@@ -1,0 +1,12 @@
+# TODO: Add comment
+# 
+# Author: yang
+###############################################################################
+
+setwd("/home/yang/Dropbox/Research/BitGuard/projects/RTest/")
+x <- 1:50
+y <- rnorm(50)
+Cycles<-7372800 * 100 / 1000
+stack_usage<- read.table('result.txt', sep="\n")
+stack_uasge
+plot(x,y)

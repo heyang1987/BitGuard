@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;BitGuardRecorederPy/result1.txt&apos; to &apos;result2.txt&apos;" description="Rename resource &apos;result1.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="result1.txt" name="result2.txt" stamp="1386796414864" updateReferences="true"/>
+</session>

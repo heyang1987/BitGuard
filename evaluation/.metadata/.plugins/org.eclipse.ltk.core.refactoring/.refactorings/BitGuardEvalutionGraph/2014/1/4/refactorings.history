@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;BitGuardEvalutionGraph/space_overhead&apos; to &apos;space_overhead.py&apos;" description="Rename resource &apos;space_overhead&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="space_overhead" name="space_overhead.py" stamp="1390193805152" updateReferences="true"/>
+</session>

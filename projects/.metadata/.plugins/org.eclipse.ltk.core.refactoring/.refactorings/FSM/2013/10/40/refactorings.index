@@ -1,0 +1,13 @@
+1380921209011	Delete element
+1380921557224	Move file
+1380921568951	Move folders
+1380921578842	Delete element
+1380921602225	Rename package 'main.java.org.squirrelframework.foundation.component'
+1380921628541	Rename package 'main.java.org.squirrelframework.foundation.component.impl'
+1380921657236	Rename package 'main.java.org.squirrelframework.foundation.event'
+1380921666996	Rename package 'main.java.org.squirrelframework.foundation.exception'
+1380921673286	Rename package 'main.java.org.squirrelframework.foundation.fsm'
+1380921678741	Rename package 'main.java.org.squirrelframework.foundation.util'
+1380923203462	Rename package 'test.java.org.squirrelframework.foundation.fsm.snake'
+1380923247807	Rename package 'test.java.org.squirrelframework.foundation.fsm.atm'
+1380923253051	Rename package 'test.java.org.squirrelframework.foundation.fsm.cssparser'

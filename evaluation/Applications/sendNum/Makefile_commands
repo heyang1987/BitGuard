@@ -1,0 +1,109 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+#SHELL := /usr/bin/bash
+RM := rm -rf
+
+USER_OBJS :=
+
+LIBS := 
+PROJ := 
+
+O_SRCS := 
+C_SRCS := 
+S_SRCS := 
+S_UPPER_SRCS := 
+OBJ_SRCS := 
+ASM_SRCS := 
+PREPROCESSING_SRCS := 
+OBJS := 
+OBJS_AS_ARGS := 
+C_DEPS := 
+C_DEPS_AS_ARGS := 
+EXECUTABLES := 
+OUTPUT_FILE_PATH :=
+OUTPUT_FILE_PATH_AS_ARGS :=
+AVR_APP_PATH :=$$$AVR_APP_PATH$$$
+QUOTE := "
+ADDITIONAL_DEPENDENCIES:=
+OUTPUT_FILE_DEP:=
+LIB_DEP:=
+
+# Every subdirectory with source files must be described here
+SUBDIRS := 
+
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS +=  \
+sendNum.c \
+uart.c
+
+
+PREPROCESSING_SRCS += 
+
+
+ASM_SRCS += 
+
+
+OBJS +=  \
+sendNum.o \
+uart.o
+
+OBJS_AS_ARGS +=  \
+sendNum.o \
+uart.o
+
+C_DEPS +=  \
+sendNum.d \
+uart.d
+
+C_DEPS_AS_ARGS +=  \
+sendNum.d \
+uart.d
+
+OUTPUT_FILE_PATH +=sendNum.elf
+
+OUTPUT_FILE_PATH_AS_ARGS +=sendNum.elf
+
+ADDITIONAL_DEPENDENCIES:=
+
+OUTPUT_FILE_DEP:=
+
+LIB_DEP+= 
+
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(C_DEPS)),)
+-include $(C_DEPS)
+endif
+endif
+
+# Add inputs and outputs from these tool invocations to the build variables 
+
+# All Target
+all: $(OUTPUT_FILE_PATH) $(ADDITIONAL_DEPENDENCIES)
+
+$(OUTPUT_FILE_PATH): $(OBJS) $(USER_OBJS) $(OUTPUT_FILE_DEP) $(LIB_DEP)
+
+
+
+
+avr-gcc -funsigned-char -funsigned-bitfields -O0 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega644p -c -std=gnu99 -MD -MP -MF "uart.d" -MT"uart.d" -MT"uart.o"   -o "uart.o" "uart.c"
+avr-gcc -funsigned-char -funsigned-bitfields -O0 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega644p -c -std=gnu99 -MD -MP -MF "sendNum.d" -MT"sendNum.d" -MT"sendNum.s"   -S "sendNum.s" "sendNum.c"
+avr-gcc -mmcu=atmega644p -c sendNum.s
+avr-gcc -o sendNum.elf  sendNum.o uart.o   -Wl,-Map="sendNum.map" -Wl,--start-group -Wl,-lm  -Wl,--end-group -Wl,--gc-sections -mmcu=atmega644p
+#avr-objcopy -j .text -j .data -O ihex sendNum.elf sendNum.hex
+	avr-size sendNum.elf
+	
+	
+
+
+
+
+
+# Other Targets
+clean:
+	-$(RM) $(OBJS_AS_ARGS) $(EXECUTABLES)  
+	-$(RM) $(C_DEPS_AS_ARGS)   
+	rm -rf "sendNum.elf" "sendNum.a" "sendNum.hex" "sendNum.lss" "sendNum.eep" "sendNum.map" "sendNum.srec"
+	

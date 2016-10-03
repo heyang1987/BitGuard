@@ -1,0 +1,7 @@
+avr-gcc -funsigned-char -funsigned-bitfields -O0 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mmcu=atmega644p -S "sendNum.s" "sendNum.c"
+
+avr-gcc -mmcu=atmega644p -c Fibonacci.s
+
+avr-gcc -T ..\..\..\projects\linker\mylinker.lds -mmcu=atmega644p -o Fibonacci.elf Fibonacci.o
+
+avr-objcopy -j .text -j .data -O ihex Fibonacci.elf Fibonacci.hex

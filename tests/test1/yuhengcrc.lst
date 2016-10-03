@@ -1,0 +1,58 @@
+---------------------------------------------
+AVR ASSEMBLER LISTING
+Line    Address Opcode  Instruction
+---------------------------------------------
+0001    000000          ; CRC16 parallel computation without using table
+0002    000000          ; data length in byte
+0003    000000          ;__DataLength__ = 0x3f
+0004    000000          
+0005    000000          crc16_init:
+0006    000000  EF2F    	ldi r18,$FF
+0007    000001  EF3F    	ldi r19,$FF
+0008    000002  E042    	ldi r20,$02
+0009    000003  E0B1    	ldi XH,$01
+0010    000004  E0A0    	ldi XL,$0
+0011    000005          	
+0012    000005          accumulate_crc16:
+0013    000005             ; r18: CRC low
+0014    000005             ; r19: CRC high
+0015    000005             ; Load the last CRC value, but swapped (low <-> high)
+0016    000005             ;lds r18, crc16_accumulator+1
+0017    000005             ;lds r19, crc16_accumulator
+0018    000005             ; First XOR
+0019    000005  917D       ld r23, X+
+0020    000006  2727       eor r18, r23
+0021    000007          
+0022    000007             ; Second XOR
+0023    000007  2F92       mov r25, r18
+0024    000008             ; These 2 instructions are faster than executing 4 times "lsr 4".
+0025    000008  9592       swap r25
+0026    000009  709F       andi r25, 0x0F
+0027    00000A  2729       eor  r18, r25
+0028    00000B          
+0029    00000B             ; Third XOR
+0030    00000B  2F92       mov r25, r18
+0031    00000C             ; These 2 instructions are faster than executing 4 times "lsr 4".
+0032    00000C  9592       swap r25
+0033    00000D  7F90       andi r25, 0xF0
+0034    00000E  2739       eor  r19, r25
+0035    00000F          
+0036    00000F             ; Fourth XOR
+0037    00000F  2F92       mov  r25, r18
+0038    000010  9592       swap r25
+0039    000011  2F89       mov  r24, r25
+0040    000012  7F90       andi r25, 0xF0
+0041    000013  708F       andi r24, 0x0F
+0042    000014  0F99       lsl r25
+0043    000015  1F88       rol r24
+0044    000016  2729       eor r18, r25
+0045    000017  2738       eor r19, r24
+0046    000018          next_data_byte:
+0047    000018  954A       dec r20
+0048    000019  F759       brne accumulate_crc16
+0049    00001A             
+0050    00001A             ;sts crc16_accumulator  , r18
+0051    00001A             ;sts crc16_accumulator+1, r19
+0052    00001A  9508       ret
+---------------------------------------------
+Number of errors = 0

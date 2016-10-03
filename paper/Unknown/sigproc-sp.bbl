@@ -1,0 +1,104 @@
+\begin{thebibliography}{10}
+
+\bibitem{argade1996apparatus}
+P.~V. Argade and M.~R. Betker.
+\newblock Apparatus and method for computer processing using an enhanced
+  harvard architecture utilizing dual memory buses and the arbitration for
+  data/instruction fetch, Nov.~19 1996.
+\newblock US Patent 5,577,230.
+
+\bibitem{atmel:avr}
+Atmel.
+\newblock Atmel avr 8-bit and 32-bit microcontrollers, October 2013.
+\newblock \url{www.atmel.com/products/microcontrollers/avr/default.aspx}.
+
+\bibitem{avrfreaks:avrgcc}
+AVRFreaks.
+\newblock Avr gcc/avr gcc toll collection, October 2013.
+\newblock
+  \url{www.avrfreaks.net/wiki/index.php/Documentation:AVR_GCC/AVR_GCC_Tool_Collection}.
+
+\bibitem{space:station:almaz}
+R.~Coppinger.
+\newblock Us, russian capsules vie for orbital domination, October 2013.
+\newblock
+  \url{www.space.com/8968-piece-chinese-space-station-assembled-2011-launch.html}.
+
+\bibitem{intel:chip:size}
+P.~Darling.
+\newblock Intel to invest more than %5 billion to build new factory in arizona,
+  October 2013.
+\newblock
+  \url{newsroom.intel.com/community/intel_newsroom/blog/2011/02/18/intel-to-invest-more-than-5-billion-to-build-new-factory-in-arizona}.
+
+\bibitem{goldt1995linux}
+S.~Goldt, S.~van~der Meer, S.~Burkett, and M.~Welsh.
+\newblock The linux programmer’s guide.
+\newblock {\em Linux Documentation Project (ftp://sunsite. unc.
+  edu/pub/Linux/docs/linux-doc-project/programmers-guide/llpg-0.4. tar. gz)},
+  1995.
+
+\bibitem{hoste2008cole}
+K.~Hoste and L.~Eeckhout.
+\newblock Cole: compiler optimization level exploration.
+\newblock In {\em Proceedings of the 6th annual IEEE/ACM international
+  symposium on Code generation and optimization}, pages 165--174. ACM, 2008.
+
+\bibitem{ariane5}
+J.~L. Lions.
+\newblock Ariane 5 flight 501 failure report, October 2013.
+\newblock \url{www.ima.umn.edu/~arnold/disasters/ariane5rep.html}.
+
+\bibitem{space:station:tiangong2}
+C.~Mokowitz.
+\newblock First piece of chinese space station assembled for 2011 launch,
+  October 2013.
+\newblock
+  \url{www.space.com/8968-piece-chinese-space-station-assembled-2011-launch.html}.
+
+\bibitem{space:shuttle:list}
+NASA.
+\newblock Space shuttle era facts, October 2013.
+
+\bibitem{sputnik1}
+A.~A. Siddiqi.
+\newblock In {\em Sputnik and the Soviet Space Challenge}, page 155. University
+  Press of Florida, Gainesville FL, 2003.
+
+\bibitem{space:shuttle:numbers}
+space.com.
+\newblock Nasa's space shuttle by the numbers, October 2013.
+\newblock
+  \url{www.space.com/12376-nasa-space-shuttle-program-facts-statistics.html}.
+
+\bibitem{satellite:next10years}
+spacedaily.
+\newblock More than 1200 satellites to be launched over the next 10 years,
+  October 2013.
+\newblock
+  \url{www.spacedaily.com/reports/More_Than_1200_Satellites_To_Be_Launched_Over_The_Next_10_Years_999.html}.
+
+\bibitem{space:station:tiangong3}
+I.~S. Tania~Branigan.
+\newblock China unveils rival to international, October 2013.
+\newblock
+  \url{www.theguardian.com/world/2011/apr/26/china-space-station-tiangong}.
+
+\bibitem{satellite:total}
+ucsusa.
+\newblock Usc satellite database, October 2013.
+\newblock
+  \url{www.ucsusa.org/nuclear_weapons_and_global_security/space_weapons/technical_issues/ucs-satellite-database.html}.
+
+\bibitem{fundamentals:space}
+H.~K.~U. Vincent L.~Pisacane.
+\newblock Embedded software systems.
+\newblock In {\em Fundamentals of Space Systems Second Edition}. Oxford
+  University Press, New York, 2005.
+
+\bibitem{space:station:opsek}
+A.~Zak.
+\newblock Russia 'to save its iss modules', October 2013.
+\newblock \url{news.bbc.co.uk/2/hi/science/nature/8064060.stm}.
+
+\end{thebibliography}

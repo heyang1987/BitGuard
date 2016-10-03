@@ -1,0 +1,60 @@
+\section{Related Work}\label{sec:related_work}
+
+
+
+\begin{comment}
+
+Prior work on single event upset mitigation spans two categories:
+First, robustness at the device level may be improved by building the hardware in such a way that radiation does not cause upset events. 
+Common hardware modifications include physical shields, protective insulation, and error correcting latches.
+Second, design level robustness may be improved by incorporating libraries and software designed to protect from single event upsets through the use of Hamming or other codes, or triple modular redundancy.
+
+\subsection{Device-Level Robustness}
+
+One of the primary methods of device-level radiation hardening is to fabricate processors using Silicon on Insulator (SOI) technology.
+In this process, transistors are placed on a thin layer of silicon, which is then placed on top of an insulator, reducing the capacitance of the switches and the size of processors~\cite{Celler2003SOI}.
+Reducing processor size effectively reduces the area over which highly-charged particles can strike, statistically reducing the likelihood of impacts, and therefore errors.
+
+Irom et al.~\cite{Irom2002SOI} compare SEU error rates in  SOI microprocessors to conventional microprocessors.
+They subject both types of microprocessors to proton impacts within a cyclotron, and to heavy-ion impacts within an accelerator, both of which are known to cause SEUs in processors.
+From these tests, Irom et al. conclude that due to the significant reduction of cross sections in SOI microprocessors, SEU rates are lower than those in commercial microprocessors.
+
+She et al.~\cite{She2012Latch} improve the design of conventional latches by implementing an error detection circuit and integrated multiplexer.
+While conventional latches are susceptible to voltage changes caused by SEUs, the proposed latch uses an error detection circuit that checks for faults using the precharge and discharge operations.
+The latch uses a multiplexer to output a corrected signal based on the fault detected by the error detection circuit.
+The authors found that the proposed latch introduces little overhead and offers good performance, as well as better SEU protection than conventional latches.
+
+\subsection{Design-Level Robustness}
+
+The most popular methods of radiation hardening are at the design level, foregoing the need to modify the hardware, thereby allowing the use of commercial microcontrollers.
+Some of these methods involve parity bits and linear error-correcting codes~\cite{ErrorCorrectingCodes}, such as the Hamming code, which correct bit errors by storing extra information about data in larger blocks.
+Alternately, Triple Modular Redundancy (TMR)~\cite{TMR} is a voting-based approach that prevents errors by implementing three systems, and then using the common result.
+The motivation is that the likelihood of two single event upsets occurring at precisely the same time, in the same geographic location, in two different devices, is incredibly low, making TMR popular in spite of the added expense.
+While this method can be implemented via hardware (such as in RAID~\cite{RAID}), it is also effective as a software-only strategy.
+
+Shirvani et al.~\cite{Shirvani2001EDAC} examine a set of error detection and correction (EDAC) methods.
+These methods detect and subsequently correct errors in memory, such as those caused by SEUs.
+EDAC methods come in both hardware and software forms.
+In scenarios where hardware-based approaches are cost prohibitive, software-based methods work well.
+The authors found that the reliability of software-based methods tends to decrease over time more rapidly than hardware-based methods.
+However, the rate of reliability loss is low enough to still be more cost effective than hardware-based methods.
+% but at a rate that it would still be cost-efficient to forgo hardware hardening in favor of software-based error correction.
+Four software-based coding schemes were considered, comprising Hamming, Cyclic, Parity, and Reed-Solomon codes.
+The authors found that most EDAC implementations can be improved by periodically scrubbing (completely cleaning) memory.
+%EDAC is simply a blanket term for most of the error detections and error recovery methods outlined in this article, and this Stanford tech report goes into detail on many of them, providing useful statistical analysis.
+
+Mhatre and Aras~\cite{mhatreSeuTmr} present a design for the on-board computer of the COEP Student Satellite, a HAM communication pico-satellite. 
+SEU protection on the satellite involves the implementation of Hamming codes, Triple Modular Redundancy, and watch-dog software.
+In the Hamming code, each 32-bit instruction is coded in the form of a 38-bit codeword, where the redundant bits are used for parity.
+Single bit errors are corrected by comparing the parity values with pre-calculated values.
+Triple Modular Redundancy is used in storing and protecting these parity values, saving space by not implementing TMR over the entire instruction memory.
+This extra storage increases program memory requirements by 75\%, rather than the 200\% increase required by a full implementation of TMR.
+The watch-dog software prevents other errors by automatically escaping system crashes.
+
+
+Similarly, Dutton and Stroud present a design implemented in configurable logic blocks for SEU detection and correction in the configuration memory of field programmable gate arrays (FPGAs)~\cite{CATA09seuonVirtex}.
+The architecture of the Xilinx Virtex FPGA is modified to implement an SEU controller that uses Hamming codes and parity values to detect and correct single bit errors in memory.
+This combination of Hamming and parity can also detect multiple bit upsets, but correction is still not possible.
+The benefits include the protection of the controller from SEUs and the high speed of error detection and correction, as compared to other methods.
+
+\end{comment}

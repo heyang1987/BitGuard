@@ -1,0 +1,24 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Related Work\(Yuheng\)}{}% 2
+\BOOKMARK [1][-]{section.3}{Background\(Yang\)}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{AVR Architecture}{section.3}% 4
+\BOOKMARK [3][-]{subsubsection.3.1.1}{AVR SRAM}{subsection.3.1}% 5
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Stack Frame}{subsection.3.1}% 6
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Registers}{subsection.3.1}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Function Call Process}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.3}{Atmel AVR Toolchain}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{System Design/Implementation}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{Supporting Memory sections}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Injected Code Segments}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.3}{The ASM Handler}{section.4}% 13
+\BOOKMARK [3][-]{subsubsection.4.3.1}{ASM Metadata}{subsection.4.3}% 14
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Reader}{subsection.4.3}% 15
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Scanner}{subsection.4.3}% 16
+\BOOKMARK [3][-]{subsubsection.4.3.4}{Injecter}{subsection.4.3}% 17
+\BOOKMARK [2][-]{subsection.4.4}{Modified Function Execution Process}{section.4}% 18
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Modified Function Invocation Process}{subsection.4.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Modified Function Return Process}{subsection.4.4}% 20
+\BOOKMARK [1][-]{section.5}{Evaluation}{}% 21
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 22
+\BOOKMARK [1][-]{section.7}{Acknowledgments}{}% 23
+\BOOKMARK [1][-]{section.8}{References}{}% 24

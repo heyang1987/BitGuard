@@ -1,0 +1,131 @@
+
+test3.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  000000c4  00000138  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000000c4  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .stab         000006cc  00000000  00000000  00000138  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  3 .stabstr      00000097  00000000  00000000  00000804  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .comment      0000002f  00000000  00000000  0000089b  2**0
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000020  00000000  00000000  000008ca  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000095  00000000  00000000  000008ea  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000055  00000000  00000000  0000097f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000043  00000000  00000000  000009d4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000034  00000000  00000000  00000a18  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    0000008d  00000000  00000000  00000a4c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000048  00000000  00000000  00000ad9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000010  00000000  00000000  00000b21  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 38 00 	jmp	0x70	; 0x70 <__ctors_end>
+   4:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+   8:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+   c:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  10:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  14:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  18:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  1c:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  20:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  24:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  28:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  2c:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  30:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  34:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  38:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  3c:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  40:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  44:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  48:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  4c:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  50:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  54:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  58:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  5c:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  60:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  64:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  68:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+  6c:	0c 94 42 00 	jmp	0x84	; 0x84 <__bad_interrupt>
+
+00000070 <__ctors_end>:
+  70:	11 24       	eor	r1, r1
+  72:	1f be       	out	0x3f, r1	; 63
+  74:	cf ef       	ldi	r28, 0xFF	; 255
+  76:	d0 e1       	ldi	r29, 0x10	; 16
+  78:	de bf       	out	0x3e, r29	; 62
+  7a:	cd bf       	out	0x3d, r28	; 61
+  7c:	0e 94 44 00 	call	0x88	; 0x88 <main>
+  80:	0c 94 60 00 	jmp	0xc0	; 0xc0 <_exit>
+
+00000084 <__bad_interrupt>:
+  84:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000088 <main>:
+
+
+#include <avr/io.h>
+
+int main(void)
+{
+  88:	cf 93       	push	r28
+  8a:	df 93       	push	r29
+  8c:	00 d0       	rcall	.+0      	; 0x8e <main+0x6>
+  8e:	00 d0       	rcall	.+0      	; 0x90 <main+0x8>
+  90:	cd b7       	in	r28, 0x3d	; 61
+  92:	de b7       	in	r29, 0x3e	; 62
+	asm volatile(
+  94:	0f be       	out	0x3f, r0	; 63
+  96:	de bf       	out	0x3e, r29	; 62
+	"out __SREG__,r0"	"\n\r"
+	"out __SP_H__,r29"
+	);
+	int i = 0;
+  98:	1a 82       	std	Y+2, r1	; 0x02
+  9a:	19 82       	std	Y+1, r1	; 0x01
+	i = i + 3;
+  9c:	89 81       	ldd	r24, Y+1	; 0x01
+  9e:	9a 81       	ldd	r25, Y+2	; 0x02
+  a0:	03 96       	adiw	r24, 0x03	; 3
+  a2:	9a 83       	std	Y+2, r25	; 0x02
+  a4:	89 83       	std	Y+1, r24	; 0x01
+
+	int j = 3;
+  a6:	83 e0       	ldi	r24, 0x03	; 3
+  a8:	90 e0       	ldi	r25, 0x00	; 0
+  aa:	9c 83       	std	Y+4, r25	; 0x04
+  ac:	8b 83       	std	Y+3, r24	; 0x03
+	j = i + j;
+  ae:	2b 81       	ldd	r18, Y+3	; 0x03
+  b0:	3c 81       	ldd	r19, Y+4	; 0x04
+  b2:	89 81       	ldd	r24, Y+1	; 0x01
+  b4:	9a 81       	ldd	r25, Y+2	; 0x02
+  b6:	82 0f       	add	r24, r18
+  b8:	93 1f       	adc	r25, r19
+  ba:	9c 83       	std	Y+4, r25	; 0x04
+  bc:	8b 83       	std	Y+3, r24	; 0x03
+    while(1)
+    {
+        //TODO:: Please write your application code 
+    }
+  be:	ff cf       	rjmp	.-2      	; 0xbe <main+0x36>
+
+000000c0 <_exit>:
+  c0:	f8 94       	cli
+
+000000c2 <__stop_program>:
+  c2:	ff cf       	rjmp	.-2      	; 0xc2 <__stop_program>
